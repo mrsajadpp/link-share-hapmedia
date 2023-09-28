@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=https://www.customlink.com">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>If you are not redirected to nabidianam live, <a href="https://youtube.com/live/gBvzlaiaqS8">click here</a>.</p>
+    
+    <script>
+        // Optional: You can use JavaScript to display a countdown timer before the redirection.
+        let countdown = 5; // Set the countdown duration in seconds
+        const countdownElement = document.getElementById('countdown');
+
+        function updateCountdown() {
+            countdown--;
+            if (countdown <= 0) {
+                window.location.href = "https://youtube.com/live/gBvzlaiaqS8"; // Redirect when countdown reaches 0
+            } else {
+                countdownElement.textContent = countdown;
+                setTimeout(updateCountdown, 1000); // Update the countdown every 1 second
+            }
+        }
+
+        // Start the countdown
+        updateCountdown();
+    </script>
+</body>
+</html>
